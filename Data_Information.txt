@@ -1,0 +1,224 @@
+Data has 
+
+Record_Type:
+    Should always b S, meaning Station Record_Type
+State_Code: 
+    Alabama......1       Maine...........23      Pennsylvania................42
+    Alaska.......2       Maryland........24      Rhode Island................44
+    Arizona......4       Massachusetts...25      South Carolina..............45
+    Arkansas.....5       Michigan........26      South Dakota................46
+    California...6       Minnesota.......27      Tennessee...................47
+    Colorado.....8       Mississippi.....28      Texas.......................48
+    Connecticut..9       Missouri........29      Utah........................49
+    Delaware.....10      Montana.........30      Vermont.....................50
+    D.C..........11      Nebraska........31      Virginia....................51
+    Florida......12      Nevada..........32      Washington..................53
+    Georgia......13      New Hampshire...33      West Virginia...............54
+    Hawaii.......15      New Jersey......34      Wisconsin...................55
+    Idaho........16      New Mexico......35      Wyoming.....................56
+    Illinois.....17      New York........36      Puerto Rico.................72
+    Indiana......18      North Carolina..37      American Samoa..............60
+    Iowa.........19      North Dakota....38      Guam........................66
+    Kansas.......20      Oregon..........41      Northern Mariana Islands....69
+    Kentucky.....21      Ohio............39      Virgin Islands of the.U.S...78
+    Louisiana....22      Oklahoma........40
+Station_ID:
+    String unique to Station
+Travel_Direction:
+    North.........1
+    Northeast.....2
+    East..........3
+    Southeast.....4
+    South.........5
+    Southwest.....6
+    West..........7
+    Northwest.....8
+    North-South...9
+    East-West.....10
+Travel_Lane:
+    Combined..0
+    Outside...1
+    Other.....2-9
+Year:
+    4 digit number
+Functional_Code:
+    Interstate..................1
+    Principal Arterial Freeway..2
+    Principal Arterial Other....3
+    Minor Arterial..............4
+    Major Collector.............5
+    Minor Collector.............6
+    Local.......................7
+Number_of_Lanes:
+    1-9. 9 used for 9 or more
+TMAS_Sample_Type:
+    Y/N if station used for TMAS
+Lanes_Monitored:
+    1-9
+Counting_Method:
+    Human Observation...................1
+    Portable Traffic Recording Device...2
+    Permanent Continuous Count Station..3
+Lanes_Monitored_Vehicle_Classification:
+    1-9
+Classification_Mechanism:
+    Human Observation........................1
+    Portable Vehicle Classification Device...2
+    Permanent Vehicle Classification Device..3
+    Speed only Site..........................4
+Classification_Method:
+    A = Human observation on site (manual)
+    B = Human observation of vehicle image (e.g., video)
+    C = Automated interpretation of vehicle image or signature (e.g., video, microwave, sonic, radar)
+    D = Vehicle length classification
+    E = Axle spacing with ASTM Standard E1572
+    F = Axle spacing with FHWA 13 Vehicle Types
+    G = Axle spacing with FHWA 13 Vehicle Types (modified)
+    H = Six categories matching the HPMS vehicle summary table requirements (See TMG Chapter 6, Section 6.2)
+    I = Inductive or Magnetic Signature (PVF data only)
+    K = Axle spacing and weight method
+    L = Axle spacing and vehicle length method
+    M = Axle spacing, weight, and vehicle length method
+    N = Axle spacing and other input(s) not specified above
+    O = Other axle spacing method
+    R = LTPP classification algorithm (The details of this scheme can be obtained in the report Verification, Refinement, and Applicability of LTPP Classification Scheme.)
+    S = State specific algorithm
+    V = Vendor default algorithm
+    Z = Other means not specified above
+Vehicle_Classification_Group:
+    02 Two groups
+        (classes 1-3) vehicles
+        (classes 4-7; 8-10; 11-13) vehicles
+    03 Three groups
+        (classes 1-3) vehicles
+        single-unit (classes 4-7)
+        combination (classes 8-13) vehicles
+    04 Four groups
+        (classes 1-3) vehicles
+        single-unit vehicles (classes 4-7)
+        single-trailer vehicles (classes 8-10)
+        multiple -trailer vehicles (classes 11-13)
+    05 Five groups
+        motorcycles (class 1)
+        two-axle, four-tire vehicles (classes 2-3)
+        buses and single-unit vehicles (classes 4-7)
+        single-trailer combination vehicles (classes 8-10)
+        multiple-trailer combination vehicles (classes 11-13)
+    06 Six groups
+        motorcycles (class 1)
+        two-axle, four-tire vehicles (classes 2-3)
+        buses (class 4)
+        single-unit vehicles (classes 5-7)
+        single-trailer combination vehicles (classes 8-10)
+        multiple-trailer combination vehicles (classes 11-13)
+    H6 HPMS definition six groups
+        motorcycles (class 1)
+        passenger cars (class 2)
+        light duty trucks (class 3)
+        buses (class 4)
+        single-unit vehicles (classes 5-7)
+        combination vehicles (classes 8-13)
+    07 Seven groups
+        motorcycles (class 1)
+        passenger cars (class 2)
+        light duty trucks (class 3)
+        buses (class 4)
+        single-unit vehicles (classes 5-7)
+        combination vehicles (classes 8-10)
+        multiple-trailer combination vehicles (classes 11-13)
+    13 FHWA's standard 13 class system
+    Other Positive Integers number of classes (unsupported by TMAS software)
+Lanes_Monitored_Truck_Weight:
+    1-9
+Weighing_Method:
+    1 = Portable static scale
+    2 = Chassis-mounted, towed static scale
+    3 = Platform or pit static scale
+    4 = Portable weigh-in-motion system
+    5 = Permanent weigh-in-motion system
+Weighing_System_Callibration:
+    A = ASTM Standard E1318
+    B = Subset of ASTM Standard E1318
+    C = Combination of test trucks and trucks from the traffic stream (but not ASTM E1318)
+    D = Other sample of trucks from the traffic stream
+    M = Statistical average of the steering axle of class nines
+    R = LTPP Calibration Method
+    S = Static calibration
+    T = Test trucks only
+    U = Uncalibrated
+    Z = Other method
+Data_Retrieval_Method:
+    1 = Not automated (manual)
+    2 = Automated (telemetry)
+Sensor_Type:
+    A = Automatic vehicle identification (AVI)
+    B = Bending plate
+    C = Capacitance strip
+    D = Capacitance mat/pad
+    E = Load cells (hydraulic or mechanical)
+    F = Fiber optic
+    G = Strain gauge on bridge beam
+    H = Human observation (manual)
+    I = Infrared
+    J = In-line strain gage load cell
+    K = Laser/Lidar
+    L = Inductive loop
+    M = Magnetometer
+    P = Piezoelectric
+    Q = Quartz piezoelectric
+    R = Road tube
+    S = Sonic/acoustic
+    T = Tape switch
+    U = Ultrasonic
+    V = Video image
+    W = Microwave (radar)
+    X = Radio wave (radar)
+    Z = Other
+Sensor_Type_2:
+    Same as above, but can be N for none
+Primary_Purpose:
+    E = Enforcement purposes (e.g., speed or weight enforcement)
+    I = Operations purposes in support of ITS initiatives
+    L = Load data for pavement design or pavement management purposes
+    O = Operations purposes but not ITS
+    P = Planning or traffic statistics including HPMS reporting purposes
+    R = Research purposes (e.g., LTPP)
+LRS_Route_ID:
+    Right-Justified string with leading zeroes
+LRS_Location:
+    In miles, by milepost, to nearest thousandth of a mile.  Decimal implied
+Lattitude:
+    Understood as XX.XXX XXX
+Longitude:
+    Understood as XX.XXX XXX
+LTPP_Site_ID:
+    String
+Previous_Station_ID:
+    String
+Year_Station_Established:
+    4 digit year
+Year_Station_Discontinued:
+    4 digit year
+FIPS_County_Code:
+    3 digit county code
+HPMS_Sample_Type:
+    Y/N if HPMS
+HPMS_Sample_ID:
+    String
+National_Highway_System:
+    Y/N
+Posted_Route_Signing:
+    1   Not signed
+    2   Interstate
+    3   U.S.
+    4   State
+    5   Off-Interstate Business Marker
+    6   County
+    7   Township
+    8   Municipal
+    9   Parkway Marker or Forest Route Marker
+    10  None of the above
+Posted_Signed_Route_Number:
+    Zero filled if no number
+Station_Location:
+    Left Justified String
