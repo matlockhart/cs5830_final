@@ -53,11 +53,14 @@ def main():
 
         
         i = 1
+        utah_count = 0
         for fl in os.listdir(f"{os.getcwd()}/raw_data"):
             with open(f"{os.getcwd()}/raw_data/{fl}", "r") as open_fl:
                 for line in open_fl:
                     print(line[0:1].strip() + separator, end="", file=out_fl) # Record_Type
                     print(line[1:3].strip() + separator, end="", file=out_fl) # State_Code
+                    if(line[1:3] == "49"):
+                        utah_count += 1
                     print(line[3:9].strip() + separator, end="", file=out_fl) # Station_ID
                     print(line[9:10].strip() + separator, end="", file=out_fl) # Travel_Direction
                     print(line[10:11].strip() + separator, end="", file=out_fl) # Travel_Lane
@@ -100,7 +103,8 @@ def main():
 
                     i += 1
                     if i % 100 == 0:
-                        print(f"On line {i}", flush=True)
+                        print(f"On line {i}", end="\r", flush=True)
+        print(f"\nUtah records: {utah_count}")
     
 
 if __name__ == '__main__':

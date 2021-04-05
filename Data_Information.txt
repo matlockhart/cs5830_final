@@ -1,5 +1,6 @@
 Record_Type:
-    Should always b S, meaning Station Record_Type
+    Should always be S, meaning Station Record_Type
+
 State_Code: 
     Alabama......1       Maine.............23      Pennsylvania................42
     Alaska.......2       Maryland..........24      Rhode Island................44
@@ -51,6 +52,7 @@ Year:
     4 digit number
 
 Functional_Code:
+    This is the type of road
     RURAL
      01 Principal Arterial - Interstate
      02 Principal Arterial - Other
@@ -70,6 +72,7 @@ Number_of_Lanes:
     1-9. 9 used for 9 or more
 
 TMAS_Sample_Type:
+    Specifies if station is TMAS or not
     T = station used
     N = station not used
 
@@ -191,7 +194,7 @@ Primary_Purpose:
     R = Research purposes (e.g., LTPP)
 
 LRS_Route_ID:
-    String ID
+    String ID, correlates to HPMS
 
 LRS_Location:
     In kilometers, coded as XXX.XXX with implied decimal
