@@ -2,5 +2,4 @@
 roads/gis_osm_roads_free_1.shp
 roads/gis_osm_roads_free_1.dbf
 data/Traffic_Violations.csv
-.vscode
-
+.vscode/*
